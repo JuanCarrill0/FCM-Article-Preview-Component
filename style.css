@@ -1,0 +1,147 @@
+body{
+    display:flex;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 12px;
+    font-family: 'Manrope', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.title-gray{
+    color: hsl(217, 19%, 35%);
+    font-weight: 800;
+}
+.subtitle{
+    color: hsl(212, 23%, 69%);
+}
+.image-aside img{
+    width: 310px;
+    border-radius: 10px;
+}
+.image-woman img{
+    width: 35px;
+    border-radius: 50%;
+}
+.tarjet{
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+}
+
+.article{
+    padding: 15px;
+    position: relative;
+    right: 30px;
+}
+
+.woman-info{
+    position: relative;
+    right: 50px;
+}
+.date{
+    position: relative;
+    bottom: 10px;
+}
+
+.name{
+    font-size: 12px;
+}
+
+.share{
+    position: relative;
+}
+
+.share img{
+    background-color:hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 10px
+}
+
+.share :hover{
+    background-color: hsl(212, 23%, 69%);
+    cursor: pointer;
+}
+.tarjet-personal{
+    display: flex;
+    width: 90%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.share-info{
+    display: none;
+    position:absolute;
+    left: 50%;
+    top: 46%;
+    color: white;
+    letter-spacing: 4px;
+    width: 280px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.share-title{
+    font-weight: 200;
+    font-size: 13px;
+}
+.share-info div{
+    padding-left: 20px;
+}
+
+@media (max-width: 800px){
+
+    .tarjet{
+        overflow: hidden;
+        height: 30px;
+    }
+    .share{
+        z-index: 1;
+        top: 5px;
+    }
+
+    .share-info{
+      display: flex;
+      justify-content:flex-start;
+      width: 109%;
+      height: 50px;
+      top: 77%;
+      margin: 0;
+      left: -14px;
+      border-radius: 0;
+    }
+    
+    .image-aside img{
+        object-fit: cover;
+        height: 200px;
+        width: 350px;
+    }
+    .tarjet{
+        grid-template-columns: 1fr;
+        top: 100px;
+        width: 350px;
+        height: 500px;
+    }
+    .article{
+        width: 280px;
+        position: relative;
+        left: 15px;
+    }
+
+    .image-woman img{
+        width: 50px;
+        margin-right: 30px;
+    }
+    
+}
